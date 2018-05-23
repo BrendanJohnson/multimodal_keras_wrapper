@@ -65,7 +65,7 @@ def loadDataset(dataset_path):
 
     logging.info("<<< Loading Dataset instance from " + dataset_path + " ... >>>")
     if sys.version_info.major == 3:
-        dataset = pk.load(open(dataset_path, 'rb'), encoding='latin1')
+        dataset = pk.load(open(dataset_path, 'rb'), encoding='utf-8')
     else:
         dataset = pk.load(open(dataset_path, 'rb'))
 
