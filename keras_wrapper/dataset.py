@@ -11,7 +11,8 @@ import os
 import random
 import re
 import sys
-
+reload(sys)
+sys.setdefaultencoding('utf8')
 if sys.version_info.major == 3:
     import _pickle  as pk
 else:
