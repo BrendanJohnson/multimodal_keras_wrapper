@@ -133,9 +133,8 @@ def list2file(filepath, mylist, permission='wb'):
 def list2stdout(mylist):
     mylist = [unicode_fn(l) for l in mylist]
     mylist = '\n'.join(mylist)
-    # if type(mylist[0]) is unicode_fn:
-
-    #     mylist = mylist.encode('utf-8')
+    if type(mylist[0]) is unicode_fn:
+        mylist = mylist.encode('utf-8')
     print (mylist)
 
 
